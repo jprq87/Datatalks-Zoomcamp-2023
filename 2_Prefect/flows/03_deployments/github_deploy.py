@@ -6,7 +6,7 @@ github_block = GitHub.load("github-block-jprq")
 
 docker_dep = Deployment.build_from_flow(
     flow=etl_parent_flow,
-    name="docker-flow",
+    name="github-flow",
     infrastructure=github_block,
 )
 
