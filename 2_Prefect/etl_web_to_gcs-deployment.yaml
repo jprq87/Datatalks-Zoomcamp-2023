@@ -1,14 +1,17 @@
 ###
 ### A complete description of a Prefect Deployment for flow 'etl-web-to-gcs'
 ###
-name: Homework_Q4_Github_Flow_Cloud
+name: Homework_Q2
 description: The main ETL function
-version: 99a049cfc6221aaac3eaede52a523145
+version: 8a3a6ee981d23a766823d05326c49544
 # The work queue that will handle this deployment's runs
 work_queue_name: default
 tags: []
 parameters: {}
-schedule: null
+schedule:
+  cron: 0 5 1 * *
+  timezone: null
+  day_or: true
 infra_overrides: {}
 infrastructure:
   type: process
@@ -26,17 +29,9 @@ infrastructure:
 ###
 flow_name: etl-web-to-gcs
 manifest_path: null
-storage:
-  repository: https://github.com/jprq87/Datatalks-Zoomcamp-2023
-  reference: null
-  access_token: null
-  _block_document_id: 4073b376-3a95-4575-b850-378072fb7ca7
-  _block_document_name: github-block-jprq
-  _is_anonymous: false
-  block_type_slug: github
-  _block_type_slug: github
-path: ''
-entrypoint: 2_Prefect\Flows\etl_web_to_gcs_homework_2.py:etl_web_to_gcs
+storage: null
+path: D:\Zoomcamp\Personal\Datatalks-Zoomcamp-2023\2_Prefect
+entrypoint: Flows\etl_web_to_gcs.py:etl_web_to_gcs
 parameter_openapi_schema:
   title: Parameters
   type: object
