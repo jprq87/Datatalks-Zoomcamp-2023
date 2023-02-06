@@ -77,13 +77,13 @@ bucket_block.save("zoom-gcs", overwrite=True)
 
 >Recreate all blocks on Prefect Cloud:
 
-![Prefect Cloud blocks](/Images/1_cloud_blocks.png)
+![Prefect Cloud blocks](/2_Prefect/Images/1_cloud_blocks.png)
 
 >Set up notifications:
 
-![Trigger](/Images/2_automations_trigger.png)
+![Trigger](/2_Prefect/Images/2_automations_trigger.png)
 
-![Actions](/Images/2_automations_actions.png)
+![Actions](/2_Prefect/Images/2_automations_actions.png)
 
 >Cloud login:
 ```
@@ -105,9 +105,9 @@ rows: 514392
 ```
 >Notifications:
 
-![Email](/Images/3_notification_email.png)
+![Email](/2_Prefect/Images/3_notification_email.png)
 
-![Slack](/Images/3_notification_slack.png)
+![Slack](/2_Prefect/Images/3_notification_slack.png)
 
 >Answer:
 `514392`
@@ -116,6 +116,6 @@ rows: 514392
 
 >Blocks > Secrets:
 
-![Email](/Images/4_blocks_secrets.png)
+![Email](/2_Prefect/Images/4_blocks_secrets.png)
 >Answer:
 `8`
