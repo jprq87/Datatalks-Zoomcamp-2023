@@ -6,7 +6,7 @@ docker_block = DockerContainer.load("jprq-zoom")
 
 docker_dep = Deployment.build_from_flow(
     flow=etl_parent_flow,
-    name="docker-flow",
+    name="github-flow",
     infrastructure=docker_block,
 )
 
