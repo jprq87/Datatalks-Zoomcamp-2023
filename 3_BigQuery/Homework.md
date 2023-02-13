@@ -87,3 +87,16 @@ WHERE pickup_datetime BETWEEN '2019-03-01' AND '2019-03-31'
 `False`
 
 ## Question 8:
+
+[ETL Script here](https://github.com/jprq87/Datatalks-Zoomcamp-2023/blob/main/3_BigQuery/etl_parquet.py)
+
+>Count confirmation queries:
+```
+SELECT COUNT(*) AS CSV
+FROM `dt_zc_week3.fhv_tripdata_2019`
+UNION ALL
+SELECT COUNT(*) AS PARQUET
+FROM `dt_zc_week3.fhv_tripdata_2019_parquet`;
+```
+>Answer:
+`43,244,696`
